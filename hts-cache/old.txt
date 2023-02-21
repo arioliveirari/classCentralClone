@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+19:46:52	219/219	---MCZ	200	added ('OK')	text/plain	etag:W/%2263f3ce77-154%22	https://www.classcentral.com/robots.txt		(from )
+19:46:53	665068/665068	---MCZ	200	added ('OK')	text/html	date:Mon,%2020%20Feb%202023%2022:46:53%20GMT	https://www.classcentral.com/	C:/My%20Web%20Sites/CentralClassCopy/www.classcentral.com/index.html	(from )
