@@ -18,8 +18,8 @@ from html.parser import HTMLParser
 import re
 import numpy as np
 
-# from googletrans import Translator
-# trans = Translator()
+#from googletrans import Translator
+#trans = Translator()
 
 
 translator= Translator(to_lang="hi")
@@ -29,7 +29,7 @@ def translate(what):
     return ""+translation+""
 
 
-site = r"C:\Users\arioli\Desktop\Test\caballo\challengeHorseChess"
+site = r"C:\Users\arioli\Desktop\Test\test10\www.classcentral.com"
 
 def paseador(direc):
     files = os.listdir(direc)
@@ -51,8 +51,7 @@ class MyHTMLParser(HTMLParser):
         self.prev = tag
         atribu = ""
         for i in attrs:
-            print(i[0],i[1])
-            atribu += ""+i[0]+"='"+str(i[1])+"'" # "class=ASD"
+            atribu += ""+i[0]+"='"+str(i[1])+"' " # "class=ASD"
         self.result += " <" + tag + " " + atribu + "> "
 
     def handle_endtag(self, tag):
@@ -63,11 +62,11 @@ class MyHTMLParser(HTMLParser):
         data2 = re.sub(r'\n', '', data,flags=re.MULTILINE)
         data3 = data2.replace(" ","").strip()
         if self.prev in ("style","script","link","a"):
-            return data
-        if data == None:
-            return ""
-        if len(data3) == 0:
-            return ""
+            self.result += data 
+        elif data == None:
+            self.result += ""
+        elif len(data3) == 0:
+            self.result += ""
         else:
             print(data)  
             trad = translate(data)
