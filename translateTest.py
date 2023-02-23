@@ -5,12 +5,6 @@ Created on Wed Feb 22 19:23:59 2023
 @author: arioli
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 21 17:35:51 2023
-
-@author: ariolveirari
-"""
 
 import os
 from translate import Translator
@@ -29,7 +23,7 @@ def translate(what):
     return ""+translation+""
 
 
-site = r"C:\Users\arioli\Desktop\Test\test10\www.classcentral.com"
+site = r"C:\Users\ariolveirari\Desktop\testing\test14\test"
 
 def paseador(direc):
     files = os.listdir(direc)
@@ -89,5 +83,3 @@ def hindiTranslate(direc):
 
 
 print(hindiTranslate(site))
-
-
