@@ -10,7 +10,6 @@ import os
 from translate import Translator
 from html.parser import HTMLParser
 import re
-import numpy as np
 
 #from googletrans import Translator
 #trans = Translator()
@@ -23,7 +22,7 @@ def translate(what):
     return ""+translation+""
 
 
-site = r"C:\Users\ariolveirari\Desktop\testing\test14\test"
+site = r"C:\Users\arioli\Documents\GitHub\classCentralClone"
 
 def paseador(direc):
     files = os.listdir(direc)
