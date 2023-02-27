@@ -70,7 +70,7 @@ class MyHTMLParser(HTMLParser):
 def hindiTranslate(direc):
     directories = paseador(direc)
     parser = MyHTMLParser() 
-    tempDirectories = [directories[0]]
+    tempDirectories = directories
     for i in tempDirectories:
         print(i)
         fil = open(i,"r", encoding="utf-8")
